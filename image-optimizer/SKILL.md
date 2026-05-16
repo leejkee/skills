@@ -1,13 +1,13 @@
 ---
 name: image-optimizer
-description: "Use this skill to compress screenshots and scanned images for blog posts. It converts images to black-on-transparent WebP files with minimal file size, sharp edges, and no background noise. Trigger this skill when the user wants to insert optimized images into notes, documents, or dark-mode web pages."
+description: "Use this skill to compress screenshots and convert images to WebP format. The processed images will be moved to a specified directory(typically a blog's static folder). Trigger this skill when the user metions blog images or wants to insert images into blog posts(e.g.,Markdown, MDX) or markdown notes."
 ---
 
 # Image Optimizer (Blog Screenshot Compression)
 
 ## Overview
 
-This skill transforms blog screenshots into tiny, sharp, black-on-transparent WebP images. It uses only **Pillow** and **NumPy** to:
+This skill transforms the screenshots into tiny, sharp, black-on-transparent WebP images. It uses only **Pillow** and **NumPy** to:
 
 - Keep text and UI elements clear
 - Remove noise and compression artifacts
