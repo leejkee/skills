@@ -24,6 +24,33 @@ The pipeline uses only **Pillow** and **NumPy** to:
 - Generate transparent dark-mode-friendly assets
 
 
+# Execution Context (IMPORTANT)
+
+The optimizer script resides inside the skill directory itself.
+
+Agents MUST NOT assume the current working directory contains:
+
+```text
+scripts/optimizer.py
+```
+
+Always resolve the script path relative to the installed skill location.
+
+Example (Windows):
+
+```bash
+python C:\Users\<user>\.config\opencode\skills\image-optimizer\scripts\optimizer.py
+```
+
+Example (Linux/macOS):
+
+```bash
+python ~/.config/opencode/skills/image-optimizer/scripts/optimizer.py
+```
+
+The current workspace/project directory is NOT guaranteed to contain the optimizer script.
+
+
 # Input Resolution Rules (IMPORTANT)
 
 ## Automatic Input Resolution
