@@ -126,6 +126,12 @@ def parse_args():
         action="store_true"
     )
 
+    parser.add_argument(
+        "--image-count",
+        type=int,
+        default=MAX_IMAGE_COUNT,
+        help=f"Max image count to consider for latest-N. Default: {MAX_IMAGE_COUNT}"
+    )
 
     return parser.parse_args()
 
